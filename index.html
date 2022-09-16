@@ -552,6 +552,8 @@
           </address>
         </div>
 
+        <!-- Footer-socials -->
+
         <div class="footer-socials">
           <h3 class="footer-socials-title">приєднуйтесь</h3>
           <ul class="footer-socials-list">
@@ -605,6 +607,22 @@
             </li>
           </ul>
         </div>
+
+        <!-- Footer subscription -->
+
+        <form class="footer-subscription" name="footer-subscription" autocomplete="off" novalidate>
+          <strong class="footer-subscription-title">Підпишіться на розсилку</strong>
+          <label class="footer-subscription-field">
+            <input class="footer-subscription-input" type="email" name="user-mail" placeholder="E-mail">
+          </label>
+          <button class="footer-subscription-button" type="submit">
+            <span class="footer-subscription-desc">Підписатися</span>
+            <svg class="footer-subscription-icon" width="24px" height="24px">
+              <use href="./image/icons.svg#send-email"></use>
+            </svg>
+          </button>
+        </form>   
+
       </div>
     </footer>
 
@@ -612,10 +630,58 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
-          <svg class="" width="11px" height="11px">
+          <svg class="modal-button-icon" width="11px" height="11px">
             <use href="./image/icons.svg#Vector"></use>
           </svg>
         </button>
+
+        <!-- Register form -->
+
+        <form class="register-form" name="register-form" autocomplete="off" novalidate>
+            <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+          <div class="register-form-group" role="group">
+            <label class="register-form-field"> 
+              <span class="register-form-label">Ім'я</span> 
+              <input class="register-form-input" type="text" name="user-name" placeholder=" ">
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./image/icons.svg#person-black"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field"> 
+              <span class="register-form-label">Телефон</span>           
+              <input class="register-form-input" type= "tel" name="user-phone" placeholder=" ">
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./image/icons.svg#phone-black"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field"> 
+              <span class="register-form-label">Пошта</span> 
+              <input class="register-form-input" type="email" name="user-mail" placeholder=" " >
+              <svg class="register-form-icon" width="18px" height="18px">
+                <use href="./image/icons.svg#email-black"></use>
+              </svg>
+            </label>
+        
+            <label class="register-form-field"> 
+             <span class="register-form-label">Коментар</span> 
+              <textarea class="register-form-message" name="user-comments" rows="6" placeholder="Введіть текст"></textarea>
+            </label>
+          </div>
+
+            <label class="register-form-agreement">
+              <input class="register-form-checkbox visually-hidden" type="checkbox" name="checkbox-agreement" id="">
+              <svg class="register-form-icon" width="16px" height="15px">
+                <use class="icon-unchecked" href="./image/icons.svg#unchecked"></use>
+                <use class="icon-checked" href="./image/icons.svg#checked"></use>
+              </svg>
+              <span class="register-form-desc">Погоджуюся з розсилкою та приймаю 
+                <a class="register-form-link" href="http://" target="_blank" rel="noopener noreferrer">Умови договору</a> </span>
+            </label>
+          
+          <button class="register-form-button" type="submit">Відправити</button>
+        </form>
       </div>      
     </div>
 
