@@ -500,13 +500,10 @@ img {
   padding: 60px 0;
 }
 
-.footer-contacts {
-  margin-right: 70px;
-}
-
 .footer-box {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 /* footer-logo */
@@ -566,11 +563,8 @@ img {
 
 .footer-socials {
   display: inline-block;
-  width: 206px;
-  height: 80px;
-  justify-content: center;
 
-  margin-right: 93px;
+  justify-content: center;
 }
 
 .footer-socials-title {
@@ -647,7 +641,7 @@ img {
   height: 50px;
   padding-left: 16px;
   align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-white-color);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -861,7 +855,6 @@ button {
   padding: 40px;
 
   width: 528px;
-  height: 581px;
 
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -927,7 +920,6 @@ button {
 
 .register-form-label {
   display: block;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -949,8 +941,7 @@ button {
   outline: transparent;
 }
 
-.register-form-input:focus,
-.register-form-input:hover {
+.register-form-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -963,13 +954,14 @@ button {
   bottom: 11px;
 }
 
-.register-form-input:focus + .register-form-icon,
-.register-form-input:hover + .register-form-icon {
+.register-form-input:focus + .register-form-icon {
   fill: var(--accent-color);
 }
 
 .register-form-message {
+  display: block;
   width: 100%;
+  height: 120px;
   transition: border-color var(--animation);
 
   resize: none;
@@ -1033,8 +1025,12 @@ button {
   opacity: 0;
 }
 
+.register-form-checkbox:focus + .register-form-icon .icon-unchecked {
+  fill: var(--accent-color);
+}
+
 .register-form-desc {
-  user-select: none;
+  /* user-select: none; */
 
   line-height: 1.71;
   color: var(--secondary-text-color);
